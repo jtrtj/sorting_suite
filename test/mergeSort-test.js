@@ -12,6 +12,7 @@ describe('mergeSort functionality', function() {
   context('mergeSort function', function() {
     it('it can merge sort a list of values', function() {
       assert.deepEqual(sorter.mergeSort([2,0,1,3]), [0,1,2,3])
+      assert.deepEqual(sorter.mergeSort([38,27,43,3,9,82,10]), [3,9,10,27,38,43,82])
     })
   })
 })
