@@ -30,6 +30,4 @@ function mergeSort(list) {
   return merge(mergeSort(lSplit), mergeSort(rSplit))
 };
 
-// const list = [2,0,1,3,6,3,23,677]
-// console.log(mergeSort(list))
 module.exports = {merge,mergeSort}
