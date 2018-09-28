@@ -1,7 +1,7 @@
 function merge(lSplit, rSplit) {
   let merged = [];
-  let lLength = lSplit.length
-  let rLength = rSplit.length
+  let lLength = lSplit.length;
+  let rLength = rSplit.length;
   let lIndex = 0;
   let rIndex = 0;
 
@@ -19,7 +19,7 @@ function merge(lSplit, rSplit) {
 };
 
 function mergeSort(list) {
-  const length = list.length
+  const length = list.length;
   if (length < 2) {
     return list;
   } 
@@ -27,7 +27,7 @@ function mergeSort(list) {
   const lSplit = list.slice(0, middle);
   const rSplit = list.slice(middle);
 
-  return merge(mergeSort(lSplit), mergeSort(rSplit))
+  return merge(mergeSort(lSplit), mergeSort(rSplit));
 };
 
 module.exports = {merge,mergeSort}
